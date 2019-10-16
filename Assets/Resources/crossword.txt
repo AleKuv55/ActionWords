@@ -1,0 +1,43 @@
+6
+3x3
+horizotal:
+рот(0,0)!
+vertical:
+тор(0,2)!
+тор
+FINITE
+3x3
+horizotal:
+бар(0,0)!
+vertical:
+бра(0,0) раб(0,2)!
+бра
+FINITE
+3x3
+horizotal:
+муж(1,0)!
+vertical:
+уж(0,2) ум(1,1)!
+муж
+FINITE
+3x3
+horizotal:
+сон(0,0)!
+vertical:
+нос(0,2)!
+сон
+FINITE
+7x7
+horizotal:
+шина(1,0) машина(3,0)!
+vertical:
+миша(3,0) ниша(1,2) мина(0,5)!
+мишан
+FINITE
+7x5
+horizotal:
+сад(1,2) лед(4,0)!
+vertical:
+еда(0,4) след(1,2) лес(4,0)!
+следа
+FINITE
