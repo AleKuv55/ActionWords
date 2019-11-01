@@ -44,8 +44,6 @@ public class CrosswordGameManager : MonoBehaviour
     {
         _levelNumber = levelNumber-1;
         LaunchCutscene(LoadingParameter.START, NextLevel);
-        _mapCanvas.gameObject.SetActive(false); 
-
     }
 
     public void NextLevel()
@@ -116,7 +114,6 @@ public class CrosswordGameManager : MonoBehaviour
             NextLevel();
             return;
         }
-        _levelEndScreen.SetActive(false);
 
         GoToMap();
     }

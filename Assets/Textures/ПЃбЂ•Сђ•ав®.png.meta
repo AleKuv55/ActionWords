@@ -1,10 +1,12 @@
 fileFormatVersion: 2
-guid: 13d4da780d23dc245a59e26b4c6a5fff
+guid: fd5479249812ead40b206fe8a6c0ad21
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: "\u041F\u043E\u0441\u043B\u0435\u0421\u043C\u0435\u0440\u0442\u0438_0"
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: "\u041F\u043E\u0441\u043B\u0435\u0421\u043C\u0435\u0440\u0442\u0438_0"
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -59,7 +61,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -70,7 +72,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -81,7 +84,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -92,6 +96,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -111,6 +116,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 668330b9a196e7741a6de931b5d059ed
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -119,10 +125,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: b003034dc184a9445bf7d88dc6012db0
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
