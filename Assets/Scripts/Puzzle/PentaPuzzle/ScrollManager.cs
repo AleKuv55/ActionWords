@@ -39,7 +39,7 @@ public class ScrollManager : MonoBehaviour
         _activeScroll = _scrollPlacements[1].GetScroll();
     }
 
-    private void Swap(int thisIsNotUsed)
+    private void Swap(int thisIntIsNotUsed)
     {
         Scroll p0 = _scrollPlacements[0].GetScroll();
         Scroll p1 = _scrollPlacements[1].GetScroll();

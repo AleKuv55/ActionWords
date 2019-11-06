@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class VectorService : MonoBehaviour
 {
+    public static float ScalarMult2 (Vector3 v1, Vector3 v2)
+    {
+        return Mathf.Sqrt(v1.x * v2.x + v1.y * v2.y);
+    }
+
     public static void RotateVector(ref Vector3 vector, float angle)
     {
         float newX = vector.x * Mathf.Cos(angle) - vector.y * Mathf.Sin(angle);

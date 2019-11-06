@@ -928,6 +928,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &594527601 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1762182774489583217, guid: 55d4f8c54d4e4e14b93e17d7f1c06f05,
+    type: 3}
+  m_PrefabInstance: {fileID: 949200618}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &807831183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,6 +1158,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PentaPuzzle
       objectReference: {fileID: 0}
+    - target: {fileID: 3713200168192168531, guid: 55d4f8c54d4e4e14b93e17d7f1c06f05,
+        type: 3}
+      propertyPath: _selectedWordText
+      value: 
+      objectReference: {fileID: 594527601}
     - target: {fileID: 3713200168192168530, guid: 55d4f8c54d4e4e14b93e17d7f1c06f05,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1323,6 +1340,11 @@ PrefabInstance:
       propertyPath: _z
       value: 89
       objectReference: {fileID: 0}
+    - target: {fileID: 3713200169056818322, guid: 55d4f8c54d4e4e14b93e17d7f1c06f05,
+        type: 3}
+      propertyPath: _leversPercentage
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3713200167538124256, guid: 55d4f8c54d4e4e14b93e17d7f1c06f05,
         type: 3}
       propertyPath: m_IsActive
@@ -1342,6 +1364,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -15.000122
+      objectReference: {fileID: 0}
+    - target: {fileID: 7185739818004139798, guid: 55d4f8c54d4e4e14b93e17d7f1c06f05,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7185739818004139798, guid: 55d4f8c54d4e4e14b93e17d7f1c06f05,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 278
+      objectReference: {fileID: 0}
+    - target: {fileID: 8121706036950992227, guid: 55d4f8c54d4e4e14b93e17d7f1c06f05,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 312.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8121706036950992227, guid: 55d4f8c54d4e4e14b93e17d7f1c06f05,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 78.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762182774489583217, guid: 55d4f8c54d4e4e14b93e17d7f1c06f05,
+        type: 3}
+      propertyPath: m_Text
+      value: "\u044A\u0435\u044A"
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3713200168192168540, guid: 55d4f8c54d4e4e14b93e17d7f1c06f05, type: 3}

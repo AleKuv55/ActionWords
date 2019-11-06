@@ -6,9 +6,10 @@ using UnityEngine.UI;
 
 public class Scroll : MonoBehaviour
 {
-    public Action<string, int[]>    _SpellActivated;
-    public Action<int>              _ThrownAway;
-    
+    public Action<string>           _SelectedWordChangedCallback;
+    public Action<string, int[]>    _SpellActivatedCallback;
+    public Action<int>              _ThrownAwayCallback;
+
     private PoolOfAll _pool;
     private Animator _anim;
 
@@ -25,22 +26,29 @@ public class Scroll : MonoBehaviour
     private string _currentWord;                    public string GetSelectedWord() { return _currentWord; }
     private int[] _letterNumbersSequence;
 
+
+    public void AddSelectedWordChangedCallback (Action<string> callback)
+    {
+        _SelectedWordChangedCallback += callback;
+    }
     
     public void AddSpellActivatedCallBack(Action<string, int[]> callback)
-    { _SpellActivated += callback; }
+    {
+        _SpellActivatedCallback += callback;
+    }
 
     public void OnSpellActivated()
     {
         GetLetterNumbersSequence();
-        _SpellActivated(_currentWord, _letterNumbersSequence);
+        _SpellActivatedCallback(_currentWord, _letterNumbersSequence);
     }
 
 
     public void AddThrownAwayCallback(Action<int> callback)
-    { _ThrownAway += callback; }
+    { _ThrownAwayCallback += callback; }
 
     public void OnThrownAway()
-    { _ThrownAway(0); }
+    { _ThrownAwayCallback(0); }
 
 
     public void Awake()
@@ -116,6 +124,8 @@ public class Scroll : MonoBehaviour
         Debug.Log("Scroll: Selected letter " + letter.GetLetter());
         _selectedLetters.Add(letter);
         _currentWord += letter.GetLetter();
+
+        _SelectedWordChangedCallback(_currentWord);
     }
 
     public void UnselectLetters()
@@ -135,6 +145,8 @@ public class Scroll : MonoBehaviour
             OnSpellActivated();
         }
         UnselectLetters();
+
+        _SelectedWordChangedCallback("");
     }
 
     
