@@ -3,12 +3,12 @@
 # Unity generated #
 # =============== #
 Assets/Scenes
-.Library
-.Logs
-.obj
-.Packages
-.Temp
-.sysinfo.txt
+Library
+Logs
+obj
+Packages
+Temp
+sysinfo.txt
 *.stackdump
 
 # ============================================= #
