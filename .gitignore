@@ -4,11 +4,11 @@
 # =============== #
 Assets/Scenes
 .Library
-Logs
-obj
-Packages
-Temp
-sysinfo.txt
+.Logs
+.obj
+.Packages
+.Temp
+.sysinfo.txt
 *.stackdump
 
 # ============================================= #
