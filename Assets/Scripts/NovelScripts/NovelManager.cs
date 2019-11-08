@@ -65,7 +65,7 @@ public class NovelManager : MonoBehaviour
     {
 
         Debug.Log("Message from master");
-Debug.Log("Message from temp branch");
+        Debug.Log("Message from temp branch");
 
     }
 }

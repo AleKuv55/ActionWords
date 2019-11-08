@@ -18,6 +18,8 @@ public class CrosswordGameManager : MonoBehaviour
     [SerializeField] private CrosswordManager       _crosswordManager;
     [SerializeField] private PentaPuzzleManager     _pentaPuzzleManager;
     [SerializeField] private NovelManager           _novelManager;
+    [SerializeField] private OnImangeChoose         _OnImageChoose;
+
 
     [SerializeField] private GameObject _levelEndScreen;
     [SerializeField] private Text _resultText;
@@ -27,7 +29,7 @@ public class CrosswordGameManager : MonoBehaviour
     private int _locationNumber = 0;
     private int _locationLevelsCount;
     private int _levelNumber;
-    private const string _levelsFile = @"Assets/Resources/crossword.txt";
+    private const string _levelsFile = "crossword";
 
     private void Awake()
     {
@@ -44,6 +46,8 @@ public class CrosswordGameManager : MonoBehaviour
     {
         _levelNumber = levelNumber-1;
         LaunchCutscene(LoadingParameter.START, NextLevel);
+
+        _OnImageChoose.SetBackground(levelNumber);
         _mapCanvas.gameObject.SetActive(false); 
 
     }
@@ -94,7 +98,7 @@ public class CrosswordGameManager : MonoBehaviour
     }
 
 
-    private void GoToMap ()
+    public void GoToMap ()
     {
         _mapCanvas.gameObject.SetActive(true);
         _puzzleCanvas.gameObject.SetActive(false);

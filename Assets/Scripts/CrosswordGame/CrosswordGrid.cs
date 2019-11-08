@@ -12,7 +12,7 @@ public class CrosswordGrid : MonoBehaviour
     private RectTransform rectTransform;
 
     [SerializeField]
-    private const float CELL_SIZE_ON_SPACE = 6;
+    private float CELL_SIZE_ON_SPACE = 4;
     [SerializeField]
     private CellPool _cellPool;
 

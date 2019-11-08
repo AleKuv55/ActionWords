@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+//using SpriteParticleEmitter;
 
 public class Liner : MonoBehaviour
 {
@@ -19,6 +20,12 @@ public class Liner : MonoBehaviour
     private int _lettersCount;
     private List<Vector3> _lettersPos;
 
+    public ParticleSystem _lineEffect;
+    private List<ParticleSystem> _lineEffArray;
+
+    public ParticleSystem _new;
+    //public UIParticleSystem partSystem;
+
     
     private void Awake()
     {
@@ -33,6 +40,7 @@ public class Liner : MonoBehaviour
 
     void Start()
     {
+        _lineEffArray = new List<ParticleSystem>();
 
         PentaLetter[] letters = FindObjectsOfType<PentaLetter>();
         foreach (PentaLetter letter in letters)
@@ -57,8 +65,24 @@ public class Liner : MonoBehaviour
         Vector3 mousePos3D = eventData.pointerCurrentRaycast.worldPosition;
         mousePos3D.z = _z;
         _lettersPos[_lettersCount-1] = mousePos3D;
+
+        //First
+        var dur = new ParticleSystem();
+        //dur = _lineEffect;
+        Vector3 a = new Vector3();
+        a = mousePos3D;
+        a.z -= 5;
+        dur = Instantiate(_new, a, Quaternion.identity); 
+        dur.transform.parent = GameObject.Find("VisualGame").transform;
+
+        //_lineEffArray.Add(dur);
+
+        //Second
+        //partSystem.Init(mousePos3D);
+        //partSystem.Play();
+
     }
-    
+
     private void AddLetter(PentaLetter letter)
     {
         Vector3         letterPos   = letter.transform.position;
@@ -79,6 +103,15 @@ public class Liner : MonoBehaviour
         _lettersCount = 1;
         _lettersPos.Clear();
         _lettersPos.Add(Vector3.zero);
+
+
+     /*   foreach (ParticleSystem obj in _lineEffArray)
+        {
+            obj.Stop();
+           // Destroy(obj.gameObject);
+            Debug.Log("HOHOHOOHPHPHPHPHP");
+        }
+        _lineEffArray.Clear();*/
     }
 
 
@@ -89,7 +122,7 @@ public class Liner : MonoBehaviour
     {
         _lineRenderer.positionCount = 0;
 
-        if (_lettersCount == 1) return;
+        if (_lettersCount == 1) {  return; }
 
         if (_lettersCount == 2)
         {

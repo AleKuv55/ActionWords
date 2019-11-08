@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 116fa50cbeb1a415388d9f9cf2e1e5c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6692769081889667295
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_0'
+  - first:
+      213: -3030492538961379767
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_1'
+  - first:
+      213: 5868166897802164170
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_2'
+  - first:
+      213: 3541816986662025650
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_3'
+  - first:
+      213: 1626086028760614875
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_4'
+  - first:
+      213: 4729505648984713833
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_5'
+  - first:
+      213: -6739606945509608179
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_6'
+  - first:
+      213: 4570184862536554688
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_7'
+  - first:
+      213: -6151550384314712992
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_8'
+  - first:
+      213: 5642229780828110816
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_9'
+  - first:
+      213: 2955782399943446950
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_10'
+  - first:
+      213: -8638714194832876660
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_11'
+  - first:
+      213: 5558528967705719575
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_12'
+  - first:
+      213: -3045355713321319560
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_13'
+  - first:
+      213: 5336597107580252018
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_14'
+  - first:
+      213: -1422210576470795056
+    second: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_15'
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_0'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 964
+        width: 300
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e02cc6d8365450ab4cdbea28671851
+      internalID: 6692769081889667295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_1'
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af6b09e0d8ac439eb02c5cf41f7b8ae
+      internalID: -3030492538961379767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_2'
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e492999606e4f2990fe5a204039401
+      internalID: 5868166897802164170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_3'
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7356f7417d0224fdcb09b8132ff65d09
+      internalID: 3541816986662025650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_4'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 300
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1178b759780e4432ea440141cbd41f16
+      internalID: 1626086028760614875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_5'
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d18616aa65c48f6a4530c8d2243f52
+      internalID: 4729505648984713833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_6'
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c69566a91705468983f9658a6d3a5bf
+      internalID: -6739606945509608179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_7'
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fe62b78d45b4d6c950c53dcabc0394
+      internalID: 4570184862536554688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_8'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb5d2f5d3d594e118cd1d247c13da32
+      internalID: -6151550384314712992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_9'
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0388009f4ce324920a4789cec7a0669a
+      internalID: 5642229780828110816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_10'
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9ce1ae0f3404719a5258ba096fdf3c
+      internalID: 2955782399943446950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_11'
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1429be58dab4dccad210a15d52233d
+      internalID: -8638714194832876660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_12'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1254cc56f24e84e0b928652c3d5d77fe
+      internalID: 5558528967705719575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_13'
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 92
+        width: 300
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d04d9c82bd54f7f94c08c77dff43ff
+      internalID: -3045355713321319560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_14'
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 87
+        width: 300
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368afbaf0ed7a4056a3c989107d1e565
+      internalID: 5336597107580252018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '%E2%80%94Pngtree%E2%80%94particle%20effects%20element_297838_15'
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3deb8e29df120445684871523cad4c09
+      internalID: -1422210576470795056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c95fc7030a53f4381b6c6c6fae6b11b3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

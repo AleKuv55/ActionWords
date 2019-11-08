@@ -4,6 +4,8 @@ using UnityEngine;
 using System.Text;
 using System.Text.RegularExpressions;
 using System;
+using System.IO;
+
 
 public class Crossword : ICrossword
 {
@@ -88,7 +90,7 @@ public class Crossword : ICrossword
         return 1;
     }
 
-    public int CWLoad1(System.IO.StreamReader MyReader)
+    public int CWLoad1(/*StreamReader */ StringReader MyReader)
     {
         int i = 0; string allText;
 
@@ -216,10 +218,16 @@ public class Crossword : ICrossword
 
     public static Crossword[] LoadCrosswords(string filepath)
     {
+        TextAsset textAsset = Resources.Load<TextAsset>(filepath);
+        StringReader MyReader = new StringReader(textAsset.text);
+
         int n = 0; int x_size; int y_size;
-        System.IO.StreamReader MyReader = new System.IO.StreamReader(filepath);
-        n = MyReader.ReadLine()[0] - '0';
-        Debug.Log("NNNNNNN" + n);
+
+
+        //System.IO.StreamReader MyReader = new System.IO.StreamReader(textAsset.text);
+        //n = MyReader.ReadLine()[0] - '0';
+        n = Convert.ToInt32(MyReader.ReadLine());
+        Debug.Log("NNNNNNN" + n );
 
         Crossword[] a = new Crossword[n];
         for (int i = 0; i < n; i++)
