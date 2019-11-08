@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CWword : MonoBehaviour
+public class CWword// : MonoBehaviour
 {
     public enum Direction
     {

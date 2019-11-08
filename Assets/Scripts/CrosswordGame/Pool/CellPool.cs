@@ -35,7 +35,7 @@ public class CellPool : MonoBehaviour
     public void StoreCell (CWCell cell)
     {
         _cells.Add(cell);
-        cell.transform.parent = transform;
+        cell.transform.SetParent(transform, false);
         cell.transform.localPosition = Vector3.zero;
     }
 }

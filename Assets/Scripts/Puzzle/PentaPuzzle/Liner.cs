@@ -33,7 +33,6 @@ public class Liner : MonoBehaviour
 
     void Start()
     {
-
         PentaLetter[] letters = FindObjectsOfType<PentaLetter>();
         foreach (PentaLetter letter in letters)
         {
