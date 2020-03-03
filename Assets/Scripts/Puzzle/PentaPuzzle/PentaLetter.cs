@@ -6,7 +6,9 @@ using JetBrains.Annotations;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class PentaLetter : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerEnterHandler
+public class PentaLetter : MonoBehaviour,
+    IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerEnterHandler,
+    IPointerDownHandler, IPointerClickHandler
 {
 
     private PentaPuzzleManager _manager;
@@ -27,7 +29,7 @@ public class PentaLetter : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
     private Action< PentaLetter >       _LetterSelected;
     private Action< PentaLetter >       _DragEnded;
-    private Action< PointerEventData >  _Drag;
+    private Action< Vector3 >  _Drag;
 
     void Awake()
     {
@@ -69,10 +71,10 @@ public class PentaLetter : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
 
 
-    public void AddDragCallback(Action<PointerEventData> action)
+    public void AddDragCallback(Action<Vector3> action)
     { _Drag += action; }
 
-    public void RemoveDragCallback(Action<PointerEventData> action)
+    public void RemoveDragCallback(Action<Vector3> action)
     { _Drag -= action; }
 
 
@@ -85,12 +87,11 @@ public class PentaLetter : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        TryToSelect(null);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        _Drag(eventData);
+        _Drag(eventData.pointerCurrentRaycast.worldPosition);
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -108,6 +109,7 @@ public class PentaLetter : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
     public bool TryToSelect(PentaLetter previousLetter)
     {
+        Debug.Log("Selecting PentaLetter " + _letter + " (" + name + ")");
         if (previousLetter != null)
         {
             if (!previousLetter.AddToNeighbours(this))
@@ -137,5 +139,15 @@ public class PentaLetter : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
         
         _neighbourLetters[_nNeighbourLetters++] = letter;
         return true;
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        TryToSelect(null);
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        _DragEnded(this);
     }
 }

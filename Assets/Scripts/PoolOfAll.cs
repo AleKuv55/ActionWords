@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PoolOfAll : MonoBehaviour
 {
-    [SerializeField] private List<PentaLetter>  _letters;
+    [SerializeField] private List<PentaLetter> _letters;
     [SerializeField] private Transform         _lettersHolder;
 
     protected void Start()
@@ -16,6 +16,11 @@ public class PoolOfAll : MonoBehaviour
     public PentaLetter GetLetter()
     {
         PentaLetter item = _letters[0];
+        Debug.Log("Returning PentaLetter \"" + item.name + "\"");
+        if (null == item)
+        {
+            Debug.Log("Letter pool is empty!!");
+        }
         _letters.RemoveAt(0);
         return item;
     }

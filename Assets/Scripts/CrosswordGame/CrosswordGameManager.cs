@@ -19,6 +19,7 @@ public class CrosswordGameManager : MonoBehaviour
     [SerializeField] private PentaPuzzleManager     _pentaPuzzleManager;
     [SerializeField] private NovelManager           _novelManager;
     [SerializeField] private OnImangeChoose         _OnImageChoose;
+    [SerializeField] private ButtonMapManager       _buttonMapManager;
 
 
     [SerializeField] private GameObject _levelEndScreen;
@@ -30,6 +31,10 @@ public class CrosswordGameManager : MonoBehaviour
     private int _locationLevelsCount;
     private int _levelNumber;
     private const string _levelsFile = "crossword";
+
+    public int _currentLevel; //to make progress visible
+
+    public  bool CUTSCENES_ENABLED = true;
 
     private void Awake()
     {
@@ -48,8 +53,15 @@ public class CrosswordGameManager : MonoBehaviour
         LaunchCutscene(LoadingParameter.START, NextLevel);
 
         _OnImageChoose.SetBackground(levelNumber);
-        _mapCanvas.gameObject.SetActive(false); 
+        _mapCanvas.gameObject.SetActive(false);
 
+        
+
+    }
+
+    public void OnContinueButton()
+    {
+        OnMapLevelButtonPressed(++_currentLevel);
     }
 
     public void NextLevel()
@@ -84,10 +96,15 @@ public class CrosswordGameManager : MonoBehaviour
             ) {
             throw new InvalidOperationException("For now can work with only START or END parameters.");
         }
+        if (!CUTSCENES_ENABLED)
+        {
+            afterCutscene();
+            return;
+        }
         int locationNumber = 0;
         _novelManager.ShowCutscene(locationNumber, _levelNumber, lp, afterCutscene);
     }
-
+//
     private void ShowLevelFinishedDialogue()
     {
         _levelEndScreen.SetActive(true);
@@ -100,6 +117,7 @@ public class CrosswordGameManager : MonoBehaviour
 
     public void GoToMap ()
     {
+        
         _mapCanvas.gameObject.SetActive(true);
         _puzzleCanvas.gameObject.SetActive(false);
     }
@@ -122,6 +140,20 @@ public class CrosswordGameManager : MonoBehaviour
         }
         _levelEndScreen.SetActive(false);
 
+        
+        
         GoToMap();
     }
+
+    void Win()
+    {
+        OnLevelFinished();
+        
+        if(_currentLevel < _levelNumber) 
+            _currentLevel = _levelNumber;
+        
+        _buttonMapManager.HighlightCurrentLevel(_currentLevel);
+
+    }
+
 }

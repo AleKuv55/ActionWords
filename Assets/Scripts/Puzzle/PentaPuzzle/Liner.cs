@@ -54,15 +54,16 @@ public class Liner : MonoBehaviour
     private void FixedUpdate()
     {
         if (_nowSelecting)
+        {
             DrawCurve();
+        }
     }
 
 
-    private void OnLettersBeingHighlighted(PointerEventData eventData)
+    public void OnLettersBeingHighlighted(Vector3 mousePos3D)
     {
         _nowSelecting = true;
 
-        Vector3 mousePos3D = eventData.pointerCurrentRaycast.worldPosition;
         mousePos3D.z = _z;
         _lettersPos[_lettersCount-1] = mousePos3D;
 
@@ -83,15 +84,19 @@ public class Liner : MonoBehaviour
 
     }
 
-    private void AddLetter(PentaLetter letter)
+    public void AddLetter (Vector3 letterPos)
     {
-        Vector3         letterPos   = letter.transform.position;
-                        letterPos.z = _z;
+        letterPos.z = _z;
         _lettersPos[_lettersCount++ - 1] = letterPos;
-        _lettersPos.Add (letterPos);
+        _lettersPos.Add(letterPos);
 
         DrawCurve();
-        
+    }
+
+    private void AddLetter(PentaLetter letter)
+    {
+        Vector3 letterPos = letter.transform.position;
+        AddLetter(letterPos);
     }
 
     public void Clear(PentaLetter lastLetter)

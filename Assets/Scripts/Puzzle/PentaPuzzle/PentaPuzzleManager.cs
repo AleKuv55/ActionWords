@@ -15,6 +15,7 @@ public class PentaPuzzleManager : MonoBehaviour, IBoardGame
 
     [SerializeField] private Text _pentagramsLeftText;
     [SerializeField] private Text _wordsSelectedText;
+    [SerializeField] private Text _selectedWordText;
 
     private int _maxWords;
     private int _wordsSelected;
@@ -39,9 +40,14 @@ public class PentaPuzzleManager : MonoBehaviour, IBoardGame
         if (_liner == null || _pool == null || _scrollManager == null)
         { Debug.LogError("PuzzleManager couldn't find something."); }
 
+        _selectedWordText.text = "";
+
         Scroll[] pents = FindObjectsOfType<Scroll>();
         foreach (Scroll pent in pents)
-        { pent.AddSpellActivatedCallBack(OnWordActivation); }
+        {
+            pent.AddSpellActivatedCallBack(OnWordActivation);
+            pent.AddSelectedWordChangedCallback(OnSelectedWordChanged);
+        }
     }
 
     public void StartBoardGame ()
@@ -80,6 +86,11 @@ public class PentaPuzzleManager : MonoBehaviour, IBoardGame
         _wordActivationCallback(word, SpellEffect.None);
     }
 
+    private void OnSelectedWordChanged (string word)
+    {
+        Debug.Log("" + word);
+        _selectedWordText.text = word.ToUpper();
+    }
 
     public void NextScroll()
     {
@@ -148,24 +159,13 @@ public class PentaPuzzleManager : MonoBehaviour, IBoardGame
         _liner.Clear(null);
         _wordActivationCallback(word, SpellEffect.None);
     }
-
-    public void ZARUBA()
-    {
-        List<string> words = GetSelectableWords();
-        if (words.Count > 0)
-            StartCoroutine(EmulateWordActivation(words[0]));
-        else
-            NextScroll();
-    }
-
+    
 
     private void IncreaseWordsSelectedText()
     {
         _wordsSelectedText.text = ++_wordsSelected + " / " + _maxWords + " слов найдено.";
     }
-
-
-
+    
 
     private SpellEffect EffectOfSequence(int wordLength, int[] sequence)
     {
